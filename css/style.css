@@ -1,0 +1,10 @@
+.sec-header {
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+.header-content p {
+	font-family: 'Open Sans','Helvetica Neue', Arial, sans-serif;
+	color: white;
+	text-transform: uppercase;
+}
