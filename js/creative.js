@@ -3,6 +3,36 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+ var i = 0,
+ 	j = 0,
+ 	x = $('.js-switch');
+
+ var startSwap = window.setInterval(function() {
+ 	setTimeout(function() {
+
+ 		if(i < x.length) {
+ 			//set j as element left of i to switch
+ 			j = i + 1;
+
+ 			if(j === x.length) {
+ 				j = 0;
+ 			}
+
+ 			//do swap
+ 			$(x[i]).removeClass('show-tag');
+ 			$(x[j]).addClass('show-tag');
+
+ 			if(i === x.length - 1) {
+ 				i = 0;
+ 			} else {
+ 				i++;
+ 			}
+
+ 		}
+
+ 		console.log('ran');
+ 	}, 1000)
+}, 5000);
 
 (function($) {
     "use strict"; // Start of use strict
@@ -44,5 +74,8 @@
 
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
+
+	//run swap
+	startSwap();
 
 })(jQuery); // End of use strict
