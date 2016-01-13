@@ -19,8 +19,8 @@
  			}
 
  			//do swap
- 			$(x[i]).removeClass('show-tag');
- 			$(x[j]).addClass('show-tag');
+ 			$(x[i]).switchClass('show-tag', 'hide-tag');
+ 			$(x[j]).switchClass('hide-tag', 'show-tag');
 
  			if(i === x.length - 1) {
  				i = 0;
