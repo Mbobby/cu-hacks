@@ -3,6 +3,15 @@ body {
 
 }
 
+.navbar-brand {
+	padding: 10px 10px 10px 20px;
+}
+
+.logo {
+	width: 120px;
+	max-width: 100%;
+}
+
 .sec-header {
 	font-weight: lighter;
 	text-transform: uppercase;
@@ -20,6 +29,12 @@ header .header-content .header-content-inner p {
 
 header .header-content .header-content-inner hr {
 	margin: 15px auto;
+}
+
+.logo-cent {
+	margin: 5px auto;
+	width: 150px;
+	max-width: 100%;
 }
 
 #tagline .opening,
