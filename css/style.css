@@ -8,3 +8,52 @@
 	color: white;
 	text-transform: uppercase;
 }
+
+#tagline .opening,
+#tagline .tags .js-switch {
+	display: inline-block;
+	margin: 0 auto 10px;
+	vertical-align: middle;
+	font-size: 1.5em;
+}
+
+#tagline .tags {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 auto 10px;
+	width: 105px;
+	height: 31px;
+}
+
+#tagline .js-switch {
+	position: absolute;
+	left: 3px;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	transform: translate(50px);
+	transition: all 1s ease-in-out;
+}
+
+#tagline .js-switch p {
+	color: #f05f40;
+	margin: 0;
+	font-weight: bold;
+	font-size: inherit;
+	text-shadow: 0 0 5px #555;
+}
+
+#tagline .js-switch.show-tag {
+	overflow: visible;
+	width: auto;
+	height: auto;
+	transform: translateX(0);;
+}
+
+#tagline .js-switch.hide-tag {
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	transform: translateY(-50px);
+}
