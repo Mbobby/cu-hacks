@@ -1,3 +1,8 @@
+body {
+	font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+
+}
+
 .sec-header {
 	font-weight: lighter;
 	text-transform: uppercase;
@@ -7,6 +12,14 @@
 	font-family: 'Open Sans','Helvetica Neue', Arial, sans-serif;
 	color: white;
 	text-transform: uppercase;
+}
+
+header .header-content .header-content-inner p {
+	margin-bottom: 0;
+}
+
+header .header-content .header-content-inner hr {
+	margin: 15px auto;
 }
 
 #tagline .opening,
@@ -56,4 +69,39 @@
 	width: 0;
 	height: 0;
 	transform: translateY(-50px);
+}
+
+#services h2,
+#services p {
+	color: #444;
+}
+
+#portfolio h2 {
+	margin: 0;
+}
+
+#contact {
+	padding: 100px 0 50px;
+	background-color: #f05f40;
+}
+
+#contact,
+#contact a {
+	color: white;
+}
+
+footer {
+	text-align: center;
+}
+
+footer p {
+	margin: 20px auto 0;
+	opacity: 0.5;
+}
+
+@media all and (max-width: 768px) {
+
+	.sponsor:first-child {
+		margin-bottom: 30px;
+	}
 }
